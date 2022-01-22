@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Donations</title>
+    
+    <style>
+        h1,form{
+            margin-left:500px;
+            color:white;
+            font-family: cursive;
+        }
+        body{
+            
+            background-image:url('daisy.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        textarea{
+            margin-left:500px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            width: 50%;
+        }
+        input[type=text], select {
+                width: 50%;
+                padding: 12px 20px;
+                margin: 8px 0;
+            }
+        
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+        li {
+            float: left;
+            }
+            
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        footer {
+        color:chocolate;
+        text-align: center;
+        padding: 10px;
+        background-color:transparent;
+        
+    }
+
+    </style>
+</head>THANK YOU FOR REGISTERING AS A DONOR!
+<body>
+<script>
+function myFunction() {
+  alert("THANK YOU FOR REGISTERING AS A DONOR!");
+}
+function fdb(){
+  var feed= prompt("Enter your feedback:");
+  if (feed != null) {
+    alert("WE WILL WORK ON IT.THANK YOU");
+  }
+}
+  function phnum(){
+    var p=document.getElementById("pno").value;
+    var regx=/[0-9]{10}/i;
+    if(!regx.test(p)){
+        alert("invalid mobile number");
+    }
+  }
+    function namo(){
+        var n=document.getElementById("nam").value;
+        var reg=/[a-z A-Z]$/i
+        if(!reg.test(n)){
+                alert("enter a proper name");
+        }
+}
+    </script>
+    
+    <ul>
+        <li><a href="index.html" id="home">HOME</a></li>
+        <li><a  href="form.html"   class="active" id="au">Register as Donor</a></li>
+        <li><a  href="listOD.html"  id="list">List of Donors</a></li>
+    </ul>
+    <h1>Try saving a life,by enrolling below</h2>
+    <form onsubmit="myFunction()">
+        
+        <input type="text" id="nam" placeholder="ENTER NAME" onchange="namo()"/><br><br>
+        <textarea id="a" placeholder="ENTER ADDRESS" ></textarea><br>
+        
+        <textarea id="pno" placeholder="ENTER NUMBER" onchange="phnum()"></textarea><br>
+       
+        <select>
+            <option selected disabled hidden> BLOOD GROUP:</option>
+            <option value="1A">O+</option>
+            <option value="2A">A+</option>
+            <option value="3A">B+</option>
+            <option value="4A">AB+</option>
+            <option value="1B">O-</option>
+            <option value="2B">A-</option>
+            <option value="3B">B-</option>
+            <option value="4B">AB-</option>
+        </select><br><br>
+        
+        <textarea placeholder="Chronic history like diabeties, Hiv etc"></textarea><br>
+        
+        <input type="submit" value="Submit" style="width: 30%;">
+        <input type="reset"style="width: 25%;"  value="Reset"/><br>
+        </form>
+        
+    
+<footer>
+    <img src="logo.jpeg " height="300px" width="300px" style="border-radius: 70%;float: left;">
+    <p id="foot"><br><br><br><br><br>Contact us:<br><br>
+    <a href="mailto:plasma@donations.com">plasma@donations.com</a><br><br>
+    <cno>+919381361142</cno><br><br>
+    <button onclick="fdb()">SEND FEEDBACK</fdb></button><br><br>
+    <bye>A group of students willing to help</bye><br></p>
+</footer>
+</body>

@@ -1,0 +1,46 @@
+body{
+    background-color:black;
+   color:#f9f9f9;
+   background-image: url('daisy.jpeg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+   
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+
+    li {
+        float: left;
+        }
+        
+    li a, .dropbtn {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        }
+        
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    footer {
+    color:chocolate;
+    text-align: center;
+    padding: 10px;
+    background-color:transparent;
+    
+}
+
+.ans{
+    font-size: 18px; font-family: Verdana, Geneva, Tahoma, sans-serif; font-weight: 200; font-style: normal; color:khaki
+}
+.ques{
+    font-size: 36px; font-style: italic; font-family: Bradley Hand, cursive; color:brown
+}

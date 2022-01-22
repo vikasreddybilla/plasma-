@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plasma Donations</title>
+    <style>
+        h1{margin-left:450px;
+            color:white;
+            font-family:fantasy;
+        }
+         body{
+            color:#f9f9f9;
+            background-image:url('daisy.jpeg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        }
+        li {
+            float: left;
+            }
+            
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+        footer {
+        color:chocolate;
+        text-align: center;
+        padding: 10px;
+        background-color:transparent;
+        
+    }
+    th{
+    text-align:left ;
+    border-style: double;}
+
+tr{
+    border-style:solid;
+}
+td:hover{
+    background-color:cornflowerblue;
+}
+tr:hover{
+    background-color:chocolate;
+}
+td{
+    border-style: ridge;
+}
+table{
+    border-style: solid;
+    width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="index.html"  id="home">HOME</a></li>
+        <li><a  href="form.html"   id="au">Register as Donor</a></li>
+        <li><a  href="listOD.html" class="active"  id="list">List of Donors</a></li>
+    </ul>
+<h1>LIST OF DONORS</h1>
+<script>
+    function submit(){
+        alert("THANK YOU FOR REGISTERING AS A DONOR!");
+    }
+    function fdb(){
+      var feed= prompt("Enter your feedback:");
+      if (feed != null) {
+        alert("WE WILL WORK ON IT.THANK YOU");
+      }
+    }
+</script>
+    <table cellspacing="20px" cellpadding="10px">
+        <tr>
+            <th>S.No</th>
+            <th>Name of donor</th>
+            <th>Blood GROUP</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Monica</td>
+            <td>O-</td>
+           
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Mike</td>
+            <td>AB+</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Pooja</td>
+            <td>B-</td>
+            
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Stella</td>
+            <td>A+</td>
+            
+           
+        </tr>
+        <tr>
+            <td>5</td>
+            <td> Neha</td>
+            <td>AB-</td>
+            
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Ram</td>
+            <td>O+</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ellen</td>
+            <td>B+</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Venkataramana</td>
+            <td>A+</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>John</td>
+            <td>AB+</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Chandler</td>
+            <td>O-</td>
+        </tr>
+        
+
+    </table>
+<footer>
+    <img src="logo.jpeg " height="300px" width="300px" style="border-radius: 70%;float: left;">
+    <p id="foot"><br><br><br><br><br>Contact us:<br><br>
+    <a href="mailto:plasma@donations.com">plasma@donations.com</a><br><br>
+    <cno>+919381361142</cno><br><br>
+    <button onclick="fdb()">SEND FEEDBACK</fdb></button><br><br>
+    <bye>A group of students willing to help</bye><br></p>
+    
+
+
+</footer>
+</body>
